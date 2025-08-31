@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: cjword-sonarqube
+  IMAGE_NAME: cjword-sonarqube-1
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
 
 jobs:
