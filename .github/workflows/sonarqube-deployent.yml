@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: cjword-sonarqube-1
+  IMAGE_NAME: cjword-sonarqube
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
 
 jobs:
@@ -57,5 +57,5 @@ jobs:
       #   run: |
       #     docker stop sonarqube || true
       #     docker rm sonarqube || true
-      #     docker pull ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+      #     docker pull ${ { env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
       #     docker run -d -p 8000:80 --name sonarqube ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
